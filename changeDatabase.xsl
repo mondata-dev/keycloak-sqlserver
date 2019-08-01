@@ -28,10 +28,10 @@
     <xsl:template match="//ds:subsystem/ds:datasources/ds:drivers">
         <xsl:copy>
             <xsl:apply-templates select="node()|@*"/>
-                <ds:driver name="sqlserver" module="com.microsoft.sqlserver">
-                    <!-- via https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/6.2/html/administration_and_configuration_guide/example_microsoft_sqlserver_xa_datasource -->
-                    <ds:xa-datasource-class>com.microsoft.sqlserver.jdbc.SQLServerXADataSource</ds:xa-datasource-class>
-                </ds:driver>
+            <ds:driver name="sqlserver" module="com.microsoft.sqlserver">
+                <!-- via https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/6.2/html/administration_and_configuration_guide/example_microsoft_sqlserver_xa_datasource -->
+                <ds:xa-datasource-class>com.microsoft.sqlserver.jdbc.SQLServerXADataSource</ds:xa-datasource-class>
+            </ds:driver>
         </xsl:copy>
     </xsl:template>
 
