@@ -1,6 +1,7 @@
 # Keycloak Docker image with Microsoft SQL Server support
 
 This image inherits from the official keycloak docker image and adds support for Microsoft SQL Server / Azure SQL.
+It uses the official jdbc driver from https://docs.microsoft.com/de-de/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2017.
 
 ## Configuration
 
