@@ -15,6 +15,30 @@ Additionally the following environment variables can be set:
 * `MSSQL_USER`
 * `MSSQL_PASSWORD`
 
+## Development
+
+Make sure docker is installed and running: `sudo service docker start`
+
+### Building the docker image
+
+```bash
+docker build -t docker.io/mondata/keycloak-sqlserver .
+```
+
+### Publishing the docker image to docker hub
+
+If you have not done this earlier, login with docker hub:
+
+```bash
+docker login
+```
+
+Then, push the image:
+
+```bash
+docker push mondata/keycloak-sqlserver
+```
+
 ## Acknowledgments
 
 This image is based on https://github.com/stocksoftware/docker-keycloak-sqlserver.
