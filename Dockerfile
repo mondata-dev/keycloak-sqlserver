@@ -1,6 +1,6 @@
 # based on the docker file of https://github.com/stocksoftware/docker-keycloak-sqlserver
 
-FROM jboss/keycloak:12.0.4
+FROM jboss/keycloak:8.0.2
 
 ADD changeDatabase.xsl /opt/jboss/keycloak/
 
