@@ -22,7 +22,7 @@ Make sure docker is installed and running: `sudo service docker start`
 ### Building the docker image
 
 ```bash
-docker build -t docker.io/mondata/keycloak-sqlserver .
+docker build -t docker.io/mondata/keycloak-sqlserver:TAG .
 ```
 
 ### Publishing the docker image to docker hub
@@ -36,7 +36,7 @@ docker login
 Then, push the image:
 
 ```bash
-docker push mondata/keycloak-sqlserver
+docker push mondata/keycloak-sqlserver:TAG
 ```
 
 ## Acknowledgments
